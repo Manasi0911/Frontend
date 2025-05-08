@@ -23,12 +23,24 @@
             box-sizing: border-box;
             flex: 1; /* Allow container to grow and take up available space */
         }
+        .start-container {
+            max-width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            flex: 1; /* Allow container to grow and take up available space */
+        }
+        .end-container {
+            max-width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            flex: 1; /* Allow container to grow and take up available space */
+        }
 
         /* Header */
         .header {
-            background-color: #222;
+            background-color: #52abce;
             color: #fff;
-            padding: 10px 15px;
+            padding: 0px 15px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -39,8 +51,9 @@
         }
 
         .logo {
-            font-size: 1.4em;
+            font-size: xx-large;
             font-weight: bold;
+            font-family: cursive;
         }
 
         .navigation {
@@ -55,6 +68,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+    
         }
 
         .navigation.active {
@@ -112,6 +126,14 @@
                 max-width: 1200px;
                 padding: 0 20px;
             }
+            .start-container {
+                min-width: 1400px;
+                padding: 0 0px;
+            }
+            .end-container {
+                min-width: 1400px;
+                padding: 0 0px;
+            }
 
             .navigation {
                 display: block;
@@ -129,7 +151,8 @@
             }
 
             .navigation ul li {
-                margin: 0 15px;
+                margin: 0px 25px;
+                
             }
 
             .mobile-menu-button, .close-menu-button {
@@ -147,7 +170,7 @@
             text-align: left;
             display: flex;
             align-items: center;
-            min-height: 300px;
+            min-height: 400px;
         }
 
         .hero-content {
@@ -392,7 +415,7 @@
 
         @media (min-width: 768px) {
             .benefits {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                grid-template-columns: 250px 250px 250px 250px;
             }
         }
 
@@ -426,8 +449,8 @@
 
         /* Footer */
         .footer {
-            background-color: #333;
-            color: #fff;
+            background-color: white;
+            color: black;
             padding: 20px 15px;
             display: grid;
             grid-template-columns: 1fr;
@@ -437,7 +460,7 @@
 
         @media (min-width: 768px) {
             .footer {
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                grid-template-columns: 500px 200px 200px 200px;
             }
         }
 
@@ -458,14 +481,14 @@
         }
 
         .footer-section ul li a {
-            color: #ddd;
+            color: black;
             text-decoration: none;
             font-size: 0.9em;
             transition: color 0.3s ease;
         }
 
         .footer-section ul li a:hover {
-            color: #fff;
+            color: black;
         }
 
         .newsletter form {
@@ -494,7 +517,7 @@
             cursor: pointer;
             font-size: 0.9em;
             transition: background-color 0.3s ease;
-            width: 100%;
+            width: 60%;
         }
 
         .newsletter button:hover {
@@ -505,7 +528,7 @@
             text-align: left;
             padding-top: 20px;
             font-size: 0.8em;
-            color: #ddd;
+            color: black;
             grid-column: 1 / -1;
         }
         .middle{
@@ -557,7 +580,7 @@
         <div class="logo">DNK</div>
         <nav class="navigation">
             <button class="close-menu-button">&times;</button>
-            <ul>
+            <ul style="padding-right: 380px;">
                 <li><a href="#">Everything</a></li>
                 <li><a href="#">Women</a></li>
                 <li><a href="#">Men</a></li>
@@ -565,14 +588,14 @@
             </ul>
         </nav>
         <div class="header-actions">
-            <a href="#">About</a>
-            <a href="#">Contact Us</a>
-            <a href="#">$0.00</a>
+            <span style="padding-right: 5px;">About </span>
+            <span style="padding-right: 5px;">Contact Us </span>
+            <span>$0.00 </span>
             <button class="mobile-menu-button">&#9776;</button>
         </div>
     </header>
 
-    <main class="container">
+    <main class="start-container">
         <section class="hero">
             <div class="hero-content">
                 <h1>Raining Offers For Hot Summer!</h1>
@@ -583,12 +606,14 @@
                 </div>
             </div>
         </section>
+    </main>
+        <main class="container">
         <section class="one">
-            <div><p>LOGO</p></div>
-            <div><p>LOGO</p></div>
-            <div><p>LOGO</p></div>
-            <div><p>LOGO</p></div>
-            <div><p>LOGO</p></div>
+            <div><img src="logo.png" alt="logo"></div>
+            <div><img src="logo.png" alt="logo"></div>
+            <div><img src="logo.png" alt="logo"></div>
+            <div><img src="logo.png" alt="logo">></div>
+            <div><img src="logo.png" alt="logo"></div>
 
         </section>
 
@@ -633,7 +658,7 @@
                         <span class="empty">★</span>
                         <span class="empty">★</span>
                       </div>
-                      <div class="color-dots">
+                      <div class="color-dots" style="padding-left: 10px; padding-bottom: 10px;">
                         <div class="dot red"></div>
                         <div class="dot blue"></div>
                         <div class="dot green"></div>
@@ -759,7 +784,8 @@
                 </div>
             </div>
         </section>
-
+        </main>
+        <main class="end-container">
         <section class="special-offer">
             <div class="special-offer-content">
                 <h3>Limited Time Offer</h3>
@@ -769,6 +795,8 @@
                 <a href="#">Shop Now</a>
             </div>
         </section>
+        </main>
+        <main class="container">
 
         <section class="benefits">
             <div class="benefit-item">
@@ -799,7 +827,7 @@
 
     <footer class="footer">
         <div class="footer-section">
-            <h3>DNK</h3>
+            <h2 style="font-family: cursive;font-size: x-large;">DNK</h2>
             <p>The best look anytime,anywhere</p>
         </div>
         <div class="footer-section">
